@@ -1,0 +1,8 @@
+{
+    "name":"PLExample",
+    "auther":"npofsi",
+    "versionName":"0.0.1",
+    "version":"0x00000001",
+    "entrance":["main","init","PL"],
+    "loader":"PowerLauncher"
+}
