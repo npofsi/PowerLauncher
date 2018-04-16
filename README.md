@@ -1,16 +1,19 @@
 # PowerLauncher-Example
 A packager for rhino.
-##Init
+
+## Init
+
 ```
 git clone https://github.com/npofsi/PowerLauncher.git
 ```
-##Build
+
+## Build
 
 Build project:
 
 run ./build.js on createjs
 
-##Doc
+## Doc
 
 Get byte array of file:
 
