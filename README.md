@@ -19,6 +19,16 @@ run ./build.js on createjs
 
 Please write '//' at the end of .js files to avoid illegal character exception.
 
+./assets/*(name)
+         icon/icon.png|
+         src.mp4      |}PL.a(name)
+         ...          |
+
+./source/*(name)(.js)
+         init(.js)|
+         main(.js)|}PL.i(name)&PL.c(name)
+         ...      |
+
 Get byte array of file:
 
 ```
