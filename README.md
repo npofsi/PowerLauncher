@@ -1,5 +1,8 @@
 # PowerLauncher-Example
 A packager for rhino.(run ./build.js on createjs)
+Build project:
+
+run ./build.js
 
 Get byte array of file:
 
