@@ -17,6 +17,8 @@ run ./build.js on createjs
 
 ## Doc
 
+Please write '//' at the end of .js files to avoid illegal character exception.
+
 Get byte array of file:
 
 ```
