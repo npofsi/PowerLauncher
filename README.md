@@ -1,9 +1,9 @@
 # PowerLauncher-Example
 A packager for rhino.
 ##Init
-
-git clone 
-
+```
+git clone https://github.com/npofsi/PowerLauncher.git
+```
 ##Build
 
 Build project:
