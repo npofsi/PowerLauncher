@@ -5,6 +5,8 @@ A packager for rhino.
 
 ```
 git clone https://github.com/npofsi/PowerLauncher.git
+cd PowerLauncher
+rm -rf .git
 ```
 
 ## Build
