@@ -1,3 +1,3 @@
-var ba=PL.a("icon/icon.png")//
+PL.icon=PL.a("icon/icon.png")//
 
 
