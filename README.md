@@ -38,7 +38,7 @@ Get byte array of file:
 ```
 PL.a("icon/icon.png") 
 ```
-Run script in function(){}:
+Run script in function:
 
 ```
 PL.i("init")  //no ".js"
