@@ -1,5 +1,5 @@
-var rel=false;
-var cp=rel?"{{PATH}}":"/sdcard/Documents/PowerLauncherExample"
+﻿//print(1)
+var cp="{{PATH}}"
 var ap=cp+"/assets"
 var lp=cp+"/loader"
 var sp=cp+"/source"
@@ -509,5 +509,4 @@ PowerLauncher:{
     }catch(e){
         Log("frameworkError-"+e.toString(),"Error");
     }
-}
-main()
+};main()//

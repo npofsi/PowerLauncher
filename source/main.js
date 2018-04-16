@@ -1,6 +1,6 @@
 const rctx=this;
 var MFW;
-print(true)
+//print(true)
 function main(){
     UI(()=>{
         MFW=new FloatWindow();
@@ -27,8 +27,8 @@ function FloatWindow(){
     this.layout.setGravity(_Gravity.CENTER);
     this.text = new _TextView(ctx);
     //print(D.getdb("icon","error"))
-    this.drawable=PL.a("icon/icon.png");
-    this.text.setBackground(new _BitmapDrawable(_BitmapFactory.decodeByteArray(this.drawable,0,this.drawable.length())));
+    this.drawable=ba//D.b64d(D.getdb("icon","error"))//PL.a("icon/icon.png");
+    this.text.setBackground(new _BitmapDrawable(_BitmapFactory.decodeByteArray(this.drawable,0,this.drawable.length)));
     this.text.setWidth(this.size*dip);
     this.text.setHeight(this.size*dip);
     this.layout.addView(this.text);
@@ -519,4 +519,4 @@ init:{
         rctx[key].p=new Function("func","callbackStore[\""+key+"\"].push(func)");
     }
 };
-main.call(this);
+main.call(this);//

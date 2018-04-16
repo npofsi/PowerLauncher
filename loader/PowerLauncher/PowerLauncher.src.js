@@ -18,7 +18,7 @@ var PL=new (function(){
         var enames={{ENTRANCE}}
         var estr=""
         for(var i=enames.length;i>0;i--){
-            estr+="eval(PL.c('\x00'+'"+enames[i-1]+"'+'\x00'));"
+            estr+="eval(PL.c('"+enames[i-1]+"'));"
         }
         return estr
     };
@@ -34,4 +34,5 @@ var PL=new (function(){
     this.CTX=null
 })
 PL.CTX=this;
+//print(PL.r())
 eval(PL.r())
