@@ -38,10 +38,21 @@ Get byte array of file:
 ```
 PL.a("icon/icon.png") 
 ```
+Import script in function:
+
+```
+var init = PL.i("init")  //no ".js"
+```
 Run script in function:
 
 ```
-PL.i("init")  //no ".js"
+PL.i("init")()//no ".js"
+```
+
+Get script source code:
+
+```
+var code=PL.c("init")//no ".js"
 ```
 Run script in global field:
 rewrite the package.json
