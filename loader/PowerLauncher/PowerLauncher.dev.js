@@ -60,6 +60,7 @@ function main(){
     output=output.replace("{{CODE}}",CODE)
     output=output.replace("{{ENTRANCE}}",manifest.entrance.toSource())
     output=output.replace("{{MANIFEST}}",manifsrc)
+    if(manifest.ajmode!=null)output=output.replace("{{AJMODE}}",manifest.ajmode)
     F.write(dp+"/output.bin.js",output)
     F.write(rp+"/"+manifest.name+"-"+manifest.versionName+".js",output)
     

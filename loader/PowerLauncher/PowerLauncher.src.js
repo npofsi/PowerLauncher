@@ -1,4 +1,5 @@
-var PL=new (function(){
+"{{AJMODE}}"
+ var PL=new (function(){
     this.p={{MANIFEST}};
     this.a=function(fn){//return ByteArray
         return android.util.Base64.decode(this.Data(fn),0)
