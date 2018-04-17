@@ -11,7 +11,7 @@ var PL=new (function(){
     };
     this.i=function(pn,field){
         var f=new Function(pn,PL.Script(pn))
-        f.call(field);
+        return f;
     };
     this.r=function(){
     //for(var i in PL.CTX)print(i+":"+PL.CTX[i])
