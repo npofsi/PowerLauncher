@@ -27,9 +27,9 @@ tap ./build.js in FileManager(app)
 
 run
 
-### Output:
+#### Output:
 
-in ./release/Name-versionName.js
+./release/Name-versionName.js
 
 ## Doc
 
