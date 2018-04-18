@@ -27,6 +27,10 @@ tap ./build.js in FileManager(app)
 
 run
 
+### Output:
+
+in ./release/Name-versionName.js
+
 ## Doc
 
 Please write '//' at the end of .js files to avoid illegal character exception.
