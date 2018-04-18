@@ -19,7 +19,7 @@ tap ./build.js in FileManager(app)
 
 run
 
-#### Autojs
+#### Autojs:
 
 tap ./build.js in FileManager(app)
 
