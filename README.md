@@ -8,9 +8,9 @@ git clone https://github.com/npofsi/PowerLauncher.git
 cd PowerLauncher
 ```
 
-Now,you can write your own JS file in ./source and put assets in ./assets
+Now,you can write your own JS file in `./source` and put assets in `./assets`
 
-Then build it and get Release Edition from ./release
+Then build it and get Release Edition from `./release`
 
 ## Build
 
@@ -44,7 +44,7 @@ Certainly,you can pack it into an apk with createjs|autojs.
 
 ## Doc
 
-warning> Please write '//' at the end of .js files to avoid illegal character exception.
+warning> Please write " `//`" at the end of .js files to avoid illegal character exception.
 
 
 ### Document structure:
