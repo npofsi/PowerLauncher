@@ -13,6 +13,8 @@ rm -rf .git
 
 #### Createjs:
 
+[LingSaTuo/Createjs](https://github.com/LingSaTuo/CreateJS)
+
 tap ./build.js in FileManager(app)
 
 >Maybe you need to choose createjs
@@ -20,6 +22,8 @@ tap ./build.js in FileManager(app)
 run
 
 #### Autojs:
+
+[hyb1996/Autojs](https://github.com/hyb1996/Auto.js)
 
 tap ./build.js in FileManager(app)
 
@@ -30,6 +34,8 @@ run
 #### Output:
 
 ./release/Name-versionName.js
+
+Certainly,you can pack it into an apk with createjs|autojs.
 
 ## Doc
 
@@ -79,7 +85,7 @@ rewrite the package.json
    ...
 }
 ```
-Adapt autojs:
+Adapt to autojs:
 rewrite the package.json
 ```
 {
