@@ -44,7 +44,9 @@ Certainly,you can pack it into an apk with createjs|autojs.
 
 ## Doc
 
-warning> Please write " `//`" at the end of .js files to avoid illegal character exception.
+>**warning**
+>
+> Please write " `//`" at the end of .js files to avoid illegal character exception.
 
 
 ### Document structure:
