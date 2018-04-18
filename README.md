@@ -1,20 +1,24 @@
 # PowerLauncher-Example
 A packager for rhino.
 
-## Init
+## Get start
 
 ```
 git clone https://github.com/npofsi/PowerLauncher.git
 cd PowerLauncher
-rm -rf .git
 ```
+
+Now,you can write your own JS file in ./source and put assets in ./assets
+Then build it and get Release Edition from ./release
 
 ## Build
 
 #### Createjs:
 
 [LingSaTuo/Createjs](https://github.com/LingSaTuo/CreateJS)
+
 [Download It](https://github.com/npofsi/PowerLauncher/blob/master/docs/CreateJS_build22.apk?raw=true)
+
 tap ./build.js in FileManager(app)
 
 >Maybe you need to choose createjs
