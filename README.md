@@ -1,5 +1,5 @@
 # PowerLauncher-Example
-A packager for rhino.
+A framework for rhino.
 
 ## Get start
 
