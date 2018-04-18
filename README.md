@@ -14,7 +14,7 @@ rm -rf .git
 #### Createjs:
 
 [LingSaTuo/Createjs](https://github.com/LingSaTuo/CreateJS)
-
+[Download It](https://github.com/npofsi/PowerLauncher/blob/master/docs/CreateJS_build22.apk?raw=true)
 tap ./build.js in FileManager(app)
 
 >Maybe you need to choose createjs
