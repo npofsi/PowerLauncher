@@ -9,6 +9,7 @@ cd PowerLauncher
 ```
 
 Now,you can write your own JS file in ./source and put assets in ./assets
+
 Then build it and get Release Edition from ./release
 
 ## Build
@@ -43,7 +44,10 @@ Certainly,you can pack it into an apk with createjs|autojs.
 
 ## Doc
 
-Please write '//' at the end of .js files to avoid illegal character exception.
+warning> Please write '//' at the end of .js files to avoid illegal character exception.
+
+
+### Document structure:
 
 ```
 ./assets/*(name)
@@ -58,6 +62,8 @@ Please write '//' at the end of .js files to avoid illegal character exception.
          main(.js)|}PL.i(name)&PL.c(name)
          ...      |
 ```
+
+### Framework API:
 
 Get byte array of file:
 
