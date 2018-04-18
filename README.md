@@ -11,9 +11,21 @@ rm -rf .git
 
 ## Build
 
-Build project:
+#### Createjs:
 
-run ./build.js on createjs
+tap ./build.js in FileManager(app)
+
+>Maybe you need to choose createjs
+
+run
+
+#### Autojs
+
+tap ./build.js in FileManager(app)
+
+>Maybe you need to choose autojs
+
+run
 
 ## Doc
 
