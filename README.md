@@ -63,5 +63,14 @@ rewrite the package.json
    ...
 }
 ```
+Adapt autojs:
+rewrite the package.json
+```
+{
+   ...
+   "ajmode":"ui"
+   ...
+}
+```
 
 
