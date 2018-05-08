@@ -1,13 +1,21 @@
+"ui";
 var path=null;
 try{
-    path=libs_inthis.getIntent().getStringExtra("path");
+    path=""+libs_inthis.getIntent().getStringExtra("path");
 }catch(err){
-    path=""//write your current abs path（no last '/')
+
+try{
+    path=""+engines.myEngine().getSource();
+}catch(err){
+
 }
+    //path=""//write your current abs path（no last '/')
+}
+//console.log(path)
 path=""+path
 path=path.replace(/\/build.js$/,"")
 //print(path)
-var manifest=JSON.parse(""+read(path+"/package.json"))
+var manifest=JSON.parse(""+read(path+"/package.json"));
 var code=read(path+"/loader/"+manifest.loader+"/"+manifest.loader+".dev.js");
 
 code=String(code

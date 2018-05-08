@@ -10,8 +10,8 @@
         if((dname.indexOf(fn)==dname.lastIndexOf(fn))&&(dname.indexOf(fn)!=-1))return data[dname.indexOf(fn)]
         return (new Error("findFileError:"+fn+" cannot be found."));
     };
-    this.i=function(pn,field){
-        var f=new Function(pn,PL.Script(pn))
+    this.i=function(pn){
+        var f=new Function(PL.Script(pn))
         return f;
     };
     this.r=function(){

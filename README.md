@@ -80,7 +80,7 @@ var init = PL.i("init")  //no ".js"
 Run script in function:
 
 ```
-PL.i("init")()//no ".js"
+PL.i("init")()  //no ".js"
 ```
 
 Get script source code:

@@ -1,0 +1,60 @@
+PowerLauncher( 以下简称 PL) 是一个模块化的 js（ rhino ）开发框架，可以将多个资源文件、.JS文件打包成为一个JS文件供开发者使用
+
+1：文档结构
+
+.(ProjectName)/*
+                              assets/*
+                                           icon/icon.png
+                                           banner.jpg
+                                           ...
+                              source/*
+                                            main.js
+                                            init.js
+                                            ...
+                              release/*
+                                             ProjectName-VersionName.js
+                              loader/*
+                                             PowerLauncher/*
+                                             ...
+                              package.json/
+                                                       {
+                                                       "name",
+                                                       "auther",
+                                                       "versionName",
+                                                       "version",
+                                                       "entrance",
+                                                       "loader",
+                                                       "ajmode"
+                                                        }
+                              build.js/
+                                             ...
+
+2：框架接口
+
+PL.a("assetName")
+    获取./assets下的assetName对应文件的字节数组（JavaArray）
+
+PL.i("srcName")
+    导入srcName.js
+        导入到变量:
+            var src=PL.i("srcName")
+        只运行:
+            PL.i("srcName")()
+
+PL.c("srcName")
+    获取srcName.js的源码（JavaString）
+    
+3:package.json
+
+warning:项目中的此文件不允许写注释
+
+{
+    "name":"PLExample",//项目名称
+    "auther":"npofsi",//作者
+    "versionName":"0.0.1",//版本名
+    "version":"0x00000001",//版本号
+    "entrance":["main","init"],//entrance packages入口文件（逆序加载
+    "loader":"PowerLauncher",//official loader&builder打包&加载器
+    "ajmode":"ui"//Adapt to autojs适配autojs的加载模式
+}
+

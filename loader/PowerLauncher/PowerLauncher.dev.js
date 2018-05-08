@@ -39,7 +39,7 @@ function main(){
         var filelist=Lpath2Lfile(patht,pathlist)
         for(var i=0;i<filelist.length;i++){
             if(filelist[i].isDirectory()){
-                aparser(filelist[i].getPath());
+                jparser(filelist[i].getPath());
             }else{
                 snames.push((""+filelist[i].getPath().replace(sp+"/","")).replace(/.js$/,""))
                 //print(anames)
@@ -79,7 +79,13 @@ function Lpath2Lfile(r,L){
 }
 PowerLauncher:{  
     try{
-        const ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
+        var ctx
+        try{
+         ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
+        }catch(err){}
+        try{
+         ctx = currentActivity()
+        }catch(err){}
         const dip = ctx.getResources().getDisplayMetrics().density;
         const BUILD={
         "name":"PowerLauncher",
