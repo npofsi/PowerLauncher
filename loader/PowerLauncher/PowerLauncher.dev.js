@@ -65,7 +65,10 @@ function main(){
     F.write(rp+"/"+manifest.name+"-"+manifest.versionName+".js",output)
     
     toast("Done!")
-    
+    //var console = new com.kingsatuo.Console.Console()
+//console.setData(libs_inthis)
+//console.log("Done!","#ffffff")
+    //console.log("Done")
 }
 function Lpath2Lfile(r,L){
     var l=[];

@@ -5,7 +5,7 @@
     "auther":"npofsi",
     "versionName":"0.0.1",
     "version":"0x00000001",
-    "entrance":["main","init"],
+    "entrance":["main"],
     "loader":"PowerLauncher",
     "ajmode":"ui"
 };
@@ -24,7 +24,7 @@
     };
     this.r=function(){
     //for(var i in PL.CTX)print(i+":"+PL.CTX[i])
-        var enames=["main", "init"]
+        var enames=["main"]
         var estr=""
         for(var i=enames.length;i>0;i--){
             estr+="eval(PL.c('"+enames[i-1]+"'));"
