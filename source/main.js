@@ -1,1 +1,1 @@
-print(""+new java.lang.String(PL.i("head/init")()))
+print(PL.t("test.txt"))

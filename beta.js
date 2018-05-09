@@ -1,3 +1,4 @@
+"ui";
 PowerLauncherBetaTestRunning=(function(){
 var read=function(path){
                try{
@@ -14,7 +15,6 @@ var read=function(path){
                    print(e.toString());
                }
            }
-"ui";
 var path=null;
 try{
     path=""+libs_inthis.getIntent().getStringExtra("path");

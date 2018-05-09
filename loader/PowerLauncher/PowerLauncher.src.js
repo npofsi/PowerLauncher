@@ -14,6 +14,10 @@
         var f=new Function(PL.Script(pn))
         return f;
     };
+    this.t=function(fn){
+        var t=new java.lang.String(this.a(fn))
+        return ""+t
+    };
     this.r=function(){
     //for(var i in PL.CTX)print(i+":"+PL.CTX[i])
         var enames={{ENTRANCE}}

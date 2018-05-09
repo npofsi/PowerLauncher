@@ -22,6 +22,10 @@
         var f=new Function(PL.Script(pn))
         return f;
     };
+    this.t=function(fn){
+        var t=new java.lang.String(this.a(fn))
+        return ""+t
+    };
     this.r=function(){
     //for(var i in PL.CTX)print(i+":"+PL.CTX[i])
         var enames=["main"]
@@ -36,7 +40,7 @@
     },
     this.Script=function(pn){
         var cname=["main", "head/init"]
-        var code=["print(\"\"+new java.lang.String(PL.i(\"head/init\")())) ", "PL.icon=PL.a(\"icon/icon.png\")\nreturn PL.a(\"test.txt\")\n//\n\n\n "]
+        var code=["print(PL.t(\"test.txt\")) ", "PL.icon=PL.a(\"icon/icon.png\")\nreturn PL.a(\"test.txt\")\n//\n\n\n "]
         return code[cname.indexOf(pn)]
         //var pubkey="{{PUBKEY}}"
     },

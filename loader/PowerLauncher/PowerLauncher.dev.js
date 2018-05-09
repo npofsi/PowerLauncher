@@ -84,6 +84,7 @@ PowerLauncher:{
     try{
         var ctx
         try{
+        //because cjs is for-minecraft
          ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
         }catch(err){}
         try{
