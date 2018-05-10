@@ -1,1 +1,1 @@
-print(PL.t("test.txt"))
+print(""+PL.r("head/init").a)

@@ -22,11 +22,15 @@
         var f=new Function(PL.Script(pn))
         return f;
     };
+    this.r=function(pn){
+        var f=new Function("var exports={};"+PL.Script(pn)+";return exports;");
+        return f();
+    };
     this.t=function(fn){
         var t=new java.lang.String(this.a(fn))
         return ""+t
     };
-    this.r=function(){
+    this.Start=function(){
     //for(var i in PL.CTX)print(i+":"+PL.CTX[i])
         var enames=["main"]
         var estr=""
@@ -39,8 +43,8 @@
         return PL.Script(pn)
     },
     this.Script=function(pn){
-        var cname=["main", "head/init"]
-        var code=["print(PL.t(\"test.txt\")) ", "PL.icon=PL.a(\"icon/icon.png\")\nreturn PL.a(\"test.txt\")\n//\n\n\n "]
+        var cname=["main", "head/init", "head/init.js.bak"]
+        var code=["print(\"\"+PL.r(\"head/init\").a) ", "PL.icon=PL.a(\"icon/icon.png\")\nexports.a=\"\"+PL.t(\"test.txt\")\n//\n\n\n ", "PL.icon=PL.a(\"icon/icon.png\")\nexports.a=\"\"+PL.a(\"test.txt\")\n//\n\n\n "]
         return code[cname.indexOf(pn)]
         //var pubkey="{{PUBKEY}}"
     },
@@ -48,4 +52,4 @@
 })
 PL.CTX=this;
 //print(PL.r())
-eval(PL.r())
+eval(PL.Start())

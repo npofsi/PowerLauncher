@@ -14,11 +14,15 @@
         var f=new Function(PL.Script(pn))
         return f;
     };
+    this.r=function(pn){
+        var f=new Function("var exports={};"+PL.Script(pn)+";return exports;");
+        return f();
+    };
     this.t=function(fn){
         var t=new java.lang.String(this.a(fn))
         return ""+t
     };
-    this.r=function(){
+    this.Start=function(){
     //for(var i in PL.CTX)print(i+":"+PL.CTX[i])
         var enames={{ENTRANCE}}
         var estr=""
@@ -40,4 +44,4 @@
 })
 PL.CTX=this;
 //print(PL.r())
-eval(PL.r())
+eval(PL.Start())
