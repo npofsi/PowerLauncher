@@ -10,6 +10,10 @@
         if((dname.indexOf(fn)==dname.lastIndexOf(fn))&&(dname.indexOf(fn)!=-1))return data[dname.indexOf(fn)]
         return (new Error("findFileError:"+fn+" cannot be found."));
     };
+    this.d=function(fn){
+        var drawable=PL.a(fn);
+        return (new android.graphics.drawable.BitmapDrawable(android.graphics.BitmapFactory.decodeByteArray(drawable,0,drawable.length)));
+    };
     this.i=function(pn){
         var f=new Function(PL.Script(pn))
         return f;
