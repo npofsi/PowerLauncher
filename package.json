@@ -6,5 +6,6 @@
     "entrance":["main"],
     "loader":"PowerLauncher",
     "ajmode":"ui",
+    "logLevel":"dev",
     "dumpKey":"0x10101111"
 }
