@@ -90,6 +90,7 @@ var code=PL.c("init")//no ".js"
 ```
 Run script in global field:
 rewrite the package.json
+
 ```
 {
    ...
@@ -97,8 +98,26 @@ rewrite the package.json
    ...
 }
 ```
+Use dexClass( 感谢 @那个谁 的帮助 ):
+Place dex file in  `./libs/dex/` .
+Place so file in  `./libs/so/` .
+Edit  `libs.json` to set label for dex&so file.
+
+```
+var DexClassLoader=PL.x(DexLabel,SoLabel);
+var Class=DexClassLoader.loadClass("ClassName");
+```
+
+Logger:
+rewrite the `logLevel : dev` to `logLevel : rel` to close logger.
+
+```
+PL.l("Log")
+```
+
 Adapt to autojs:
 rewrite the package.json
+
 ```
 {
    ...

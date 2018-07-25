@@ -1,13 +1,5 @@
 var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
-var dexpath="/storage/emulated/0/___/stackblur.jar.dex"
-var sopath="/storage/emulated/0/___/arm64-v8a/libblur.so"
-var jnipath=ctx.getDir("libs", android.app.Activity.MODE_PRIVATE);
-var dirpath=ctx.getDir("dex", android.app.Activity.MODE_PRIVATE).getAbsolutePath();
-copy(sopath, new java.io.File(jnipath, "libblur.so").getAbsolutePath());
-
-
-var dcl=PL.x("stackblur","stackblur")//new Packages.dalvik.system.DexClassLoader(dexpath, dirpath, jnipath, java.lang.ClassLoader.getSystemClassLoader());
-
+var dcl=PL.x("stackblur","stackblur");
 var cls=dcl.loadClass("com.enrique.stackblur.StackBlurManager")
 
 var api=cls.newInstance()
@@ -26,9 +18,3 @@ function creatView(){
 	window.showAtLocation(ctx.getWindow().getDecorView(), android.view.Gravity.CENTER, 0, 0);
 }
 
-function copy(f, t){
-	var fip = new java.io.FileInputStream(f).getChannel();
-	var fop = new java.io.FileOutputStream(t).getChannel();
-	fip.transferTo(0, fip.size(), fop);
-	fip.close();fop.close();
-}
