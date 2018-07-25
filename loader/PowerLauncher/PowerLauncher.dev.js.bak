@@ -34,7 +34,7 @@ function main(){
             if(filelist[i].isDirectory()){
                 xparser(filelist[i].getPath());
             }else{
-                dexname.push(""+filelist[i].getPath().replace(xp+"/",""))
+                dexname.push(""+filelist[i].getPath().replace(ap+"/",""))
                 //print(anames)
                 dexb64.push(""+D.b64e(F.readbin(filelist[i].getPath())))
             }
@@ -52,7 +52,7 @@ function main(){
             if(filelist[i].isDirectory()){
                 nparser(filelist[i].getPath());
             }else{
-                soname.push(""+filelist[i].getPath().replace(np+"/",""))
+                soname.push(""+filelist[i].getPath().replace(ap+"/",""))
                 //print(anames)
                 sob64.push(""+D.b64e(F.readbin(filelist[i].getPath())))
             }

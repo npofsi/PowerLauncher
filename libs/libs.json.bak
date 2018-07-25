@@ -1,0 +1,8 @@
+{
+    "dex":{
+        "stackblur":"stackblur.jar.dex"
+    },
+    "so":{
+        "stackblur":"arm64-v8a/stackblur.so"
+    }
+}

@@ -68,7 +68,7 @@
         sf.createNewFile();
         this.WriteBinArray(sf.getAbsolutePath(),this.Libs(solabel,"so"));
         var dexpath="/sdcard/.PowerLauncher/cache";
-        var f=new java.io.File(dexpath);
+        var f=new File(dexpath);
         f.getParentFile().mkdirs();
         f.createNewFile();
         this.WriteBinArray(dexpath,this.Libs(dexlabel,"dex"));
